@@ -1,20 +1,28 @@
 スクリプトは 2016年10月19日 03時54分45秒
- に開始しました]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ sudo rebootupdate-grub[5Preboot[5Prebootsudo rebootupdate-grub[5Preboot[Ktrema send[K[K[K[Ksend_packets --source hos t1-1 --dest host1-2[1P2[1P2[C[K4[1P[1P
+ に開始しました]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ sudo rebootupdate-grub[5Preboot[5Prebootsudo rebootupdate-grub[5Preboot[Ktrema send[K[K[K[Ksend_packets --source hos 
+t1-1 --dest host1-2[1P2[1P2[C[K4[1P[1P
 ]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1
 Packets sent:
   192.168.0.1 -> 192.168.0.4 = 1 packet
 ]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1[K2[K4
 Packets received:
   192.168.0.1 -> 192.168.0.4 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host41end_packets --source hostt1 --dest host4[K1[C[1P[1@4
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema send_packets --source hostt4 --dest host1[A]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host41end_packets --source host
+t1 --dest host4[K1[C[1P[1@4
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema send_packets --source host
+t4 --dest host1[A
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1
 Packets sent:
   192.168.0.1 -> 192.168.0.4 = 1 packet
 Packets received:
   192.168.0.4 -> 192.168.0.1 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1end_packets --source hostt4 --dest host1[A]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1end_packets --source host
+t4 --dest host1[A
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
 Packets sent:
   192.168.0.4 -> 192.168.0.1 = 1 packet
 Packets received:
@@ -27,22 +35,35 @@ cookie=0x0, duration=41.181s, table=0, n_packets=0, n_bytes=0, idle_age=41, prio
 cookie=0x0, duration=51.877s, table=0, n_packets=0, n_bytes=0, idle_age=51, priority=65535,udp,in_port=3,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
 ]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw3[K4
 cookie=0x0, duration=60.892s, table=0, n_packets=0, n_bytes=0, idle_age=60, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw4321show_stats host41end_packets --source hostt4 --dest host1[A]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1end_packets --source hostt1 --dest host4
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema send_packets --source hostt1 --dest host4[A]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321show_stats host41
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw4321show_stats host41end_packets --source host
+t4 --dest host1[A
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1end_packets --source host
+t1 --dest host4
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema send_packets --source host
+t1 --dest host4[A
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321show_stats host41
 Packets sent:
   192.168.0.1 -> 192.168.0.4 = 2 packets
 Packets received:
   192.168.0.4 -> 192.168.0.1 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1end_packets --source hostt1 --dest host4[A]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321show_stats host414
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1end_packets --source host
+t1 --dest host4[A
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321show_stats host414
 Packets sent:
   192.168.0.4 -> 192.168.0.1 = 1 packet
 Packets received:
   192.168.0.1 -> 192.168.0.4 = 2 packets
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host41end_packets --source hostt1 --dest host4[A]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host41end_packets --source host
+t1 --dest host4[A
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321
 cookie=0x0, duration=127.136s, table=0, n_packets=0, n_bytes=0, idle_age=127, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1
 cookie=0x0, duration=28.013s, table=0, n_packets=0, n_bytes=0, idle_age=28, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=37:84:12:a7:26:85,dl_dst=97:f6:8a:65:ed:a9,nw_src=192.168.0.1,nw_dst=192.168.0.4,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
 ]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ exit
