@@ -1,72 +1,34 @@
-スクリプトは 2016年10月19日 03時54分45秒
- に開始しました]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ sudo rebootupdate-grub[5Preboot[5Prebootsudo rebootupdate-grub[5Preboot[Ktrema send[K[K[K[Ksend_packets --source hos 
-t1-1 --dest host1-2[1P2[1P2[C[K4[1P[1P
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1
-Packets sent:
-  192.168.0.1 -> 192.168.0.4 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1[K2[K4
-Packets received:
-  192.168.0.1 -> 192.168.0.4 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host41end_packets --source host
-t1 --dest host4[K1[C[1P[1@4
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema send_packets --source host
-t4 --dest host1[A
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
-
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1
-Packets sent:
-  192.168.0.1 -> 192.168.0.4 = 1 packet
-Packets received:
-  192.168.0.4 -> 192.168.0.1 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1end_packets --source host
-t4 --dest host1[A
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
-
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-Packets sent:
-  192.168.0.4 -> 192.168.0.1 = 1 packet
-Packets received:
-  192.168.0.1 -> 192.168.0.4 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw1
-cookie=0x0, duration=29.616s, table=0, n_packets=0, n_bytes=0, idle_age=29, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw1[K2
-cookie=0x0, duration=41.181s, table=0, n_packets=0, n_bytes=0, idle_age=41, priority=65535,udp,in_port=3,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw2[K3
-cookie=0x0, duration=51.877s, table=0, n_packets=0, n_bytes=0, idle_age=51, priority=65535,udp,in_port=3,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw3[K4
-cookie=0x0, duration=60.892s, table=0, n_packets=0, n_bytes=0, idle_age=60, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema dump_flows lsw4321show_stats host41end_packets --source host
-t4 --dest host1[A
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[C[9Phow_stats host4
-
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1end_packets --source host
-t1 --dest host4
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema send_packets --source host
-t1 --dest host4[A
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
-
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321show_stats host41
-Packets sent:
-  192.168.0.1 -> 192.168.0.4 = 2 packets
-Packets received:
-  192.168.0.4 -> 192.168.0.1 = 1 packet
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host1end_packets --source host
-t1 --dest host4[A
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
-
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321show_stats host414
-Packets sent:
-  192.168.0.4 -> 192.168.0.1 = 1 packet
-Packets received:
-  192.168.0.1 -> 192.168.0.4 = 2 packets
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ trema show_stats host41end_packets --source host
-t1 --dest host4[A
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ [C[C[C[C[C[C[10Pdump_flows lsw4
-
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C321
-cookie=0x0, duration=127.136s, table=0, n_packets=0, n_bytes=0, idle_age=127, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=97:f6:8a:65:ed:a9,dl_dst=37:84:12:a7:26:85,nw_src=192.168.0.4,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1
-cookie=0x0, duration=28.013s, table=0, n_packets=0, n_bytes=0, idle_age=28, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=37:84:12:a7:26:85,dl_dst=97:f6:8a:65:ed:a9,nw_src=192.168.0.1,nw_dst=192.168.0.4,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2
-]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning_switchensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning_switch$ exit
-
-スクリプトは 2016年10月19日 03時59分05秒
+スクリプトは 2016年10月26日 04時37分27秒
+ に開始しました]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ trema protocols=OpenFlow13 dump_flows lsw[8P--openf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13@--openflow13 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[13P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cookie=0x0, duration=21.805s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop
+cookie=0x0, duration=21.767s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop
+cookie=0x0, duration=21.764s, table=0, n_packets=0, n_bytes=0, priority=1 actions=goto_table:1
+cookie=0x0, duration=21.767s, table=1, n_packets=0, n_bytes=0, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD
+cookie=0x0, duration=21.766s, table=1, n_packets=0, n_bytes=0, priority=1 actions=CONTROLLER:65535
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ trema send_pak[Kckets -s host1 -d host2
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ trema send_packets -s host1 -d host2[16Pdump_flows lsw
+cookie=0x0, duration=90.403s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop
+cookie=0x0, duration=90.365s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop
+cookie=0x0, duration=90.362s, table=0, n_packets=1, n_bytes=42, priority=1 actions=goto_table:1
+cookie=0x0, duration=90.365s, table=1, n_packets=0, n_bytes=0, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD
+cookie=0x0, duration=90.364s, table=1, n_packets=1, n_bytes=42, priority=1 actions=CONTROLLER:65535
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ \\[K[Ktrema dump_flows lswsend_packets -s host1 -d host2[K1[C[1P[1@2
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ trema send_packets -s host2 -d host1[16Pdump_flows lsw
+cookie=0x0, duration=117.809s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop
+cookie=0x0, duration=117.771s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop
+cookie=0x0, duration=117.768s, table=0, n_packets=2, n_bytes=84, priority=1 actions=goto_table:1
+cookie=0x0, duration=117.771s, table=1, n_packets=0, n_bytes=0, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD
+cookie=0x0, duration=3.698s, table=1, n_packets=0, n_bytes=0, idle_timeout=180, priority=2,in_port=2,dl_src=0f:33:ee:6a:af:11,dl_dst=23:5e:72:ad:67:bb actions=output:1
+cookie=0x0, duration=117.77s, table=1, n_packets=2, n_bytes=84, priority=1 actions=CONTROLLER:65535
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ trema dump_flows lswsend_packets -s host2 -d host1[16Pdump_flows lswsend_packets -s host1 -d host2
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ trema send_packets -s host1 -d host2[16Pdump_flows lsw
+cookie=0x0, duration=149.213s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop
+cookie=0x0, duration=149.175s, table=0, n_packets=0, n_bytes=0, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop
+cookie=0x0, duration=149.172s, table=0, n_packets=3, n_bytes=126, priority=1 actions=goto_table:1
+cookie=0x0, duration=149.175s, table=1, n_packets=0, n_bytes=0, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD
+cookie=0x0, duration=35.102s, table=1, n_packets=0, n_bytes=0, idle_timeout=180, priority=2,in_port=2,dl_src=0f:33:ee:6a:af:11,dl_dst=23:5e:72:ad:67:bb actions=output:1
+cookie=0x0, duration=3.016s, table=1, n_packets=0, n_bytes=0, idle_timeout=180, priority=2,in_port=1,dl_src=23:5e:72:ad:67:bb,dl_dst=0f:33:ee:6a:af:11 actions=output:2
+cookie=0x0, duration=149.174s, table=1, n_packets=3, n_bytes=126, priority=1 actions=CONTROLLER:65535
+]0;ensyuu2@ensyuu2-VirtualBox: ~/ensyuu2/learning-switch-shuya-abeensyuu2@ensyuu2-VirtualBox:~/ensyuu2/learning-switch-shuya-abe$ exit
+スクリプトは 2016年10月26日 04時39分56秒
  に終了しました
